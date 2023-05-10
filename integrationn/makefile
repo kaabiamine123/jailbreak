@@ -1,5 +1,5 @@
-menu:main.o Menu.o Music.o Text.o Buttons.o Background.o time.o map.o pres.o collisionparfaite.o
-	gcc main.o Menu.o Music.o Text.o Buttons.o Background.o time.o map.o pres.o collisionparfaite.o -o menu -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf -g
+menu:main.o Menu.o Music.o Text.o Buttons.o Background.o time.o map.o pres.o collisionparfaite.o xo.o
+	gcc main.o Menu.o Music.o Text.o Buttons.o Background.o time.o map.o pres.o collisionparfaite.o xo.o -o menu -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf -g
 main.o:main.c
 	gcc -c main.c -g
 Menu.o:Menu.c
@@ -20,4 +20,6 @@ pres.o:pres.c
 	gcc -c pres.c -g
 collisionparfaite.o:collisionparfaite.c
 	gcc -c collisionparfaite.c -g
+xo.o:xo.c
+	gcc -c xo.c -g
 
